@@ -1,5 +1,7 @@
-CTE creates a temporary result to view data; 
-it has no physical implication on the database.
+CTE :
+
+A Common Table Expression (CTE) in SQL is a temporary result set that can be referenced within a SELECT, INSERT, UPDATE, or DELETE statement.
+CTEs are defined using the WITH keyword and allow you to create a named, reusable subquery within your SQL statement
 
 *******************Tables used are *************************************
 -- 1. Department Information
@@ -39,7 +41,7 @@ CREATE TABLE hiring_info (
 WITH emp_summary as (
 select emp.employee_id,
 emp.first_name,
-emp.salary ,
+emp.salary,
 dd.department_name,
 hr.hire_date,
 emp.department_id
